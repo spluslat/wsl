@@ -11,6 +11,7 @@ Windows Subsystem for Linux2（WSL2）インスタンスの管理用のバッチ
 | 3 | wsllogin.bat | 指定したWSLディストリビューションにユーザーとしてログイン |
 | 4 | wslexport.bat | WSLディストリビューションのエクスポート |
 | 5 | wsldel.bat | WSLインスタンスの削除 |
+| 6 | wsl2portfowarding.ps1 | WindowsとWSLインスタンスのポートフォワード設定 |
 
 ## 使用方法
 
@@ -79,3 +80,11 @@ wsldel <ディストリビューション名>
 ```powershell
 wsldel Ubuntu-22.04
 ```
+
+### 6. wsl2portfowarding.ps1 
+WindowsとWSLインスタンスのポートフォワード設定を行う。
+ポート番号の設定を変更（変数`$portsHashTable`に定義）して、`右クリック` -> `PowerShell で実行` から実行してください。
+
+## 関連記事
+- [【WSL2】Microsoft Storeが使えない環境でもWSL2を使いたい！](https://zenn.dev/splusl_at/articles/wsl2-install-without-microsoft-store)
+- [【WSL2】外部からWSL2のサービスに接続する](https://zenn.dev/splusl_at/articles/wsl2-connect-outside)
